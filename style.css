@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,300&display=swap');
+
+
+.warnings{
+   
+    color: black;
+    
+}
+body{
+    max-width: 120rem;
+    width: 95%; 
+    background-color: #9AD0C2;
+    font-family: 'Poppins', sans-serif;
+}
+
+h2{
+    text-align: center;
+
+}
+
+.form{
+    text-align: center;
+    background-color: #ECF4D6;
+    padding: 3rem;
+    border-radius: 2rem;
+    
+
+}
+
+h1{
+font size: 5rem;
+}
+select{
+    
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificar atributos</title>
+</head>
+<body>
+    <h3>Menu</h3>
+
+    <ul id="menu">
+        <li id="menu-item">Breakfast</li>
+        <li id="menu-item">Jugos</li>
+        <li id="menu-item">Postres</li>
+        <li id="menu-item">Almuerzo</li>
+        <li id="menu-elemento"></li>
+        
+    </u>
+    <!--ESTO SIRVE PARA IDENTIFICAR ATRIBUTOS DE UN ELEMENTO-->
+    <!--Como observa, el codigo js agrega contenido dentro del elemento-->
+    <script>
+        var menu2= document.getElementById("menu-elemento");
+        menu2.innerHTML += '<li id="menu-elemento">Cena</li>'
+    </script>
+</body>
+</html>
