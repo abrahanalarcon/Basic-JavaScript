@@ -92,11 +92,19 @@ code{
 }
 
 #funcion-1{
-  display: block;
+  /* display: block;
   text-align: left;
   white-space: pre;
   color:black;
   border-radius: 5px;
   margin-left: 15px;
-  font-size: 1.15rem;
+  font-size: 1.15rem; */
+}
+.console-box {
+  background-color: #222;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #444;
+  padding: 10px;
+  margin:10px 0  0 15px;
 }

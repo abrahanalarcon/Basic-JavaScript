@@ -48,43 +48,54 @@
     <hr/>
     <!--3 section-->
     <section id="Conditions"class="main-section">
-      <header class="title">Conditions</header>
-      <p>Python supports the usual logical conditions from mathematics:</p>
+      <header class="title">Operadores</header>
+      <p>Los operadores en JavaScript son símbolos o palabras reservadas que se utilizan para realizar operaciones en variables y valores.</p>
       <ul>
-        <li>Equals: a == b</li>
-        <li>Not Equals: a != b</li>
-        <li>Less than: a < b</li>
-        <li>Less than or equal to: a <= b</li>
-        <li>Greater than: a > b</li>
-        <li>Greater than or equal to: a >= b</li>
+        <li><span style="font-weight: bold;"> Equals:</span> numero1 == numero3</li>
+        <li><span style="font-weight: bold;">Not Equals:</span> numero1 != numero3</li>
+        <li><span style="font-weight: bold;">Less than:</span> numero3 < numero1</li>
+        <li><span style="font-weight: bold;">Less than or equal to:</span> numero3 =< numero1</li>
+        <li><span style="font-weight: bold;">Greater than:</span> numero1 > numero3</li>
+        <li><span style="font-weight: bold;"">Greater than or equal to:</span> numero1 >= numero3</li>
       </ul>
-      <p>These conditions can be used in several ways, <i>most commonly in "if statements" and loops.</i></p>
+      <p>Estas condiciones se pueden utilizar de varias maneras, <i>más comúnmente en "declaraciones if" y bucles.</i></p>
     <code>
-      x = 2
-      print(x == 2) //prints out True
-      print(x == 3) //prints out False
-      print(x < 3) //prints out True
+      const numero1 = 20;
+      const numero2 = "20";
+      const numero3 = 30;
+      
+      // Operador Mayor a 
+      console.log( numero1 > numero3 );
+      console.log( numero3 > numero1 );
+      
+      
+      // Operador Menor que
+      console.log(numero3 < numero1);
+      
     </code>
     </section>
       <hr>
       <!--4 section-->
     <section id="If_else_statements"class="main-section">
       <header class="title">If else statements</header>
-      <p> The if/else statement executes a block of code if a specified condition is true. 
-        If the condition is false, another block of code can be executed. 
-        The if/else statement is a part of Python's "Conditional" Statements,
-         which are used to perform different actions based on different conditions.</p>
-      <p>An example:</p>
+      <p>The if/else Algunas veces vas a desear que tu código se ejecute basado en una condición
+          Cuando vas a un cajero, lo primero que haces es insertar tu tarjeta.Segundo colocas tu número, si
+          el número esta bien, puedes continuar, sino, te dice que hubo un error.Después eliges la operación que deseas hacer,
+          si quieres retirar dinero,el cajero va a revisar que tengas primero esa cantidad, no puedes retirar una cantidad que no tienes..
+          Lo mismo pasa en programación, si no eres amigo de alguien en facebook, no lo puedes contactar o escribir,
+          dependiendo de la configuración tal vez tampoco puedas darle me gusta  a su foto de perfil...
+          también si no eres usuario de este curso  no podrías verlo salvo que lo hayas descargado de internet.
+         Y para ejecutar nuestro código basado en una condición, se utilizan las estructuras de contro</p>
+      
       <code>
-        num = 3
-        if num > 0:
-            print(num, "is a positive number.")
-        print("This is always printed.")
-  
-        num = -1
-        if num > 0:
-            print(num, "is a positive number.")
-        print("This is also always printed.")
+        const puntaje = '1000';
+
+        // es igual
+       if(puntaje == 1000) {
+        console.log("Si es igual!");
+        } else {
+        console.log("No no es igual");
+        }
       </code>
     </section>
       <hr>
@@ -104,28 +115,60 @@
         }
         document.querySelector('#funcion-1').innerHTML = greetings() 
       </code>
-      <p id="funcion-1"></p>
+      <div class="console-box">
+        <p id="funcion-1"></p>
+      </div>
+      
 
       <p style="font-weight: bold;">Funcion con parametros</p>
       <code>
-        
+        var a=10, b= 20
         function suma(numero1, numero2){
           return numero1 +numero2;
         }
         
         document.querySelector('#funcion-2').innerHTML = suma(a, b)
       </code>
+      <div class="console-box">
+        <p id="funcion-2"></p>
+      </div>
     </section>
       <hr>
       <!--6 section-->
+      <section id="Arrays"class="main-section">
+        <header class="title">Objetos</header>
+        <p>En JavaScript, un objeto es una estructura de datos que puede contener propiedades y métodos.
+           Las propiedades son pares clave-valor que almacenan datos, mientras que los métodos son funciones
+            asociadas al objeto que pueden realizar acciones o cálculos específicos.
+        </p>
+        <code>
+          const articulos = {
+            nombre:'cama',
+            size: 'grande',
+            color:'blanca',
+            precio:'$35.00',
+            peso: '60kg',
+            modelo: 'RD0144'
+        }
+        </code>
+        <div class="console-box">
+          <p id="atributos"></p>
+          <p id="atributos2"></p>
+          <p id="atributos3"></p>
+          <p id="atributos4"></p>
+          <p id="atributos5"></p>
+          <p id="atributos6"></p>
+        </div>
+      </section>
+      <hr/>
+      <!--7 section-->
     <section id="Arrays"class="main-section">
       <header class="title">Arrays</header>
-      <p>Python arrays are a data structure like lists. They contain a number of objects that can be of different
-         data types. In addition, Python arrays can be iterated and have a number of built-in functions to handle them.
-         Arrays are useful if you want to work with many values of the same Python data type. 
+      <p>En JavaScript, un array es una estructura de datos que se utiliza para almacenar una colección ordenada de elementos.
+         Estos elementos pueden ser de cualquier tipo de datos, como números, cadenas, objetos, funciones, etc. 
       </p>
       <code>
-      students = ['Alex', 'Bill', 'Catherine', 'Andy', 'Molly', 'Rose']
+        var colores = ['rojo', 'verde', 'azul'];
       </code>
     </section>
     <hr/>
