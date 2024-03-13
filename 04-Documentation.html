@@ -1,0 +1,148 @@
+<!DOCTYPE html> 
+
+
+<html lang="en">
+
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Tecnical Documentation Page</title>
+  
+  <link rel="stylesheet" href="css/Documentation.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+ 
+  <nav id="navbar"  class="navblack">
+    <header>JavaScript Documentation</header>
+    <ul id="nav-items">
+      <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+      <li><a href="#Hello_World!" class="nav-link">Hello World!</a></li>
+      <li><a href="#Conditions" class="nav-link">Conditions</a></li>
+      <li><a href="#If_else_statements" class="nav-link">If else statements</a></li>
+      <li><a href="#Functions" class="nav-link">Functions</a></li>
+      <li><a href="#Arrays" class="nav-link">Arrays</a></li>
+      <li><a href="#Reference" class="nav-link">Reference</a></li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <!--1 section-->
+    <section id="Introduction" class="main-section">
+      <header class="title">Introduction</header>
+      <p>JavaScript es un lenguaje de programación de alto nivel y de propósito general.
+         Utiliza un enfoque multiparadigma, lo que significa que admite la programación procedural,
+         orientada a objetos y algunos conceptos de programación funcional.</p>
+      <p>Fue creado originalmente por <a href="https://en.wikipedia.org/wiki/Brendan_Eich" 
+      target="_blank">Brendan Eich </a>en un período de 10 días en 1995 como un lenguaje de scripting para mejorar la interactividad en páginas web en el navegador Netscape Navigator.
+       Desde entonces,ha evolucionado enormemente y se ha convertido en uno de los lenguajes de programación más populares y ampliamente utilizados en la web.
+      </p>
+    </section>
+    <hr>
+    <!--2 section-->
+    <section id="Hello_World!"class="main-section">
+      <header class="title">Hello World!</header>
+      <p> Para comenzar a escribir nuestro primer programa Python, abriremos nuestro editor de código preferido y escribiremos un programa simple "Hola mundo". 
+        En Python se vería así:</p>
+      <code>console.log("Hello, world!");    //nuestro primer programa!</code>
+    </section>
+    <hr/>
+    <!--3 section-->
+    <section id="Conditions"class="main-section">
+      <header class="title">Conditions</header>
+      <p>Python supports the usual logical conditions from mathematics:</p>
+      <ul>
+        <li>Equals: a == b</li>
+        <li>Not Equals: a != b</li>
+        <li>Less than: a < b</li>
+        <li>Less than or equal to: a <= b</li>
+        <li>Greater than: a > b</li>
+        <li>Greater than or equal to: a >= b</li>
+      </ul>
+      <p>These conditions can be used in several ways, <i>most commonly in "if statements" and loops.</i></p>
+    <code>
+      x = 2
+      print(x == 2) //prints out True
+      print(x == 3) //prints out False
+      print(x < 3) //prints out True
+    </code>
+    </section>
+      <hr>
+      <!--4 section-->
+    <section id="If_else_statements"class="main-section">
+      <header class="title">If else statements</header>
+      <p> The if/else statement executes a block of code if a specified condition is true. 
+        If the condition is false, another block of code can be executed. 
+        The if/else statement is a part of Python's "Conditional" Statements,
+         which are used to perform different actions based on different conditions.</p>
+      <p>An example:</p>
+      <code>
+        num = 3
+        if num > 0:
+            print(num, "is a positive number.")
+        print("This is always printed.")
+  
+        num = -1
+        if num > 0:
+            print(num, "is a positive number.")
+        print("This is also always printed.")
+      </code>
+    </section>
+      <hr>
+      <!--5 section-->
+    <section id="Functions"class="main-section">
+      <header class="title">Functions</header>
+      <p>
+        En JavaScript, una función es un bloque de código que realiza una tarea específica o calcula un valor. Las funciones en JavaScript son objetos de primera clase,
+        lo que significa que pueden ser tratadas como cualquier otra variable, lo que permite pasarse como argumentos a otras funciones, asignarse a variables y devolverse
+        como valores desde otras funciones.
+      </p>
+      <p style="font-weight: bold;">Funcion sin parametros</p>
+      <code>
+        var a=10, b= 20
+        function greetings(){
+          return "Hello, Friend";
+        }
+        document.querySelector('#funcion-1').innerHTML = greetings() 
+      </code>
+      <p id="funcion-1"></p>
+
+      <p style="font-weight: bold;">Funcion con parametros</p>
+      <code>
+        
+        function suma(numero1, numero2){
+          return numero1 +numero2;
+        }
+        
+        document.querySelector('#funcion-2').innerHTML = suma(a, b)
+      </code>
+    </section>
+      <hr>
+      <!--6 section-->
+    <section id="Arrays"class="main-section">
+      <header class="title">Arrays</header>
+      <p>Python arrays are a data structure like lists. They contain a number of objects that can be of different
+         data types. In addition, Python arrays can be iterated and have a number of built-in functions to handle them.
+         Arrays are useful if you want to work with many values of the same Python data type. 
+      </p>
+      <code>
+      students = ['Alex', 'Bill', 'Catherine', 'Andy', 'Molly', 'Rose']
+      </code>
+    </section>
+    <hr/>
+    <!--7 section-->
+    <section id="Reference"class="main-section">
+      <header class="title">Reference</header>
+      <p>
+        <b></b> For this documentation I referenced 
+        <a href="https://www.w3schools.com/python/default.asp" target="_blank">w3school</a>,
+         <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a> 
+         and <a href="https://www.tutorialspoint.com/python/index.htm" target="_blank">tutorialspoint</a>
+      </p>
+      <br/>
+      <br/>
+      <br/>
+    </section>
+    <script src="js/funciones.js"></script>
+  </main>
+
+</hmtl>
